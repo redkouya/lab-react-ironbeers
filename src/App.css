@@ -1,78 +1,81 @@
 .App {
   text-align: center;
 }
-
-header{
- 
+a {
+  color: black;
+}
+.routes-container {
+  margin-top: 20px;
+}
+header {
   background-color: aqua;
 }
-header a{
+header a {
   display: flex;
   justify-content: center;
-  padding:30px 0;
-
+  padding: 30px 0;
 }
-.container-spinner{
+.container-spinner {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-.beer-card img{
+.beer-card img {
   height: 100px;
-
 }
 
-.beer-card{
+.beer-card {
   border: 2px solid lightgray;
   border-radius: 20px;
   width: 200px;
   padding: 10px 5px;
-  height:250px;
-  
+  height: 250px;
 }
-.beer-list-container{
+.beer-list-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap:10px;
-  margin:20px 20px;
-  
+  gap: 10px;
+  margin: 20px 20px;
 }
 
-.beer-list-container a{
-  color:black;
+.beer-list-container a {
+  color: black;
   text-decoration: none;
 }
 
-.single-card img{
-
+.single-card img {
   width: 100px;
 }
-.single-card{
+.single-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
   width: 60%;
-  
 }
-.container-center{
+.container-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h2,h3,h4,h5,p{
-  margin:5px;
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 5px;
   padding: 5px;
 }
-.beer-card p{
-  color:black;
+.beer-card p {
+  color: black;
   font-size: 10px;
 }
-.single-card .tagline,.beer-card .tagline{
-  color:gray;
+.single-card .tagline,
+.beer-card .tagline {
+  color: gray;
 }
