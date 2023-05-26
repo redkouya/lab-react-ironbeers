@@ -13,7 +13,7 @@ function BeersList() {
       const response = await axios.get(
         "https://ih-beers-api2.herokuapp.com/beers"
       );
-      console.log(response.data);
+    //  console.log(response.data);
       setBeers(response.data);
       setIsLoading(false);
     } catch (err) {
@@ -25,7 +25,7 @@ function BeersList() {
     getData();
   }, []);
 
-  if (isLoading ) { //! xq  funciona solo a veces?
+  if (isLoading ) { 
     return (
       <div className="container-spinner">
         <BounceLoader color="yellow" />
@@ -37,11 +37,12 @@ function BeersList() {
     <div className="beer-list-container">
        {beers.map((eachBeer) => {
         return (
-          <Link to={"/beer/" + eachBeer._id}>
+          <Link key={eachBeer._id} to={"/beer/" + eachBeer._id}>
             <div className="beer-card">
               <img src={eachBeer.image_url} alt={eachBeer.name} />
               <h3>{eachBeer.name}</h3>
-              <h5>{eachBeer.tagline}</h5>
+              <h5 className="tagline">{eachBeer.tagline}</h5>
+              <p>Created by: {eachBeer.contributed_by}</p>
             </div>
           </Link>
         );
