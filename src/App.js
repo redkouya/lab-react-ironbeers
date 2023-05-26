@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import NewBeer from "./pages/NewBeer";
 import RandomBeer from "./pages/RandomBeer";
 import SingleBeer from "./pages/SingleBeer";
+import Error from "./pages/Error";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -19,6 +21,10 @@ function App() {
         <Route path="/new-beer" element={<NewBeer />} />
         <Route path="/random-beer" element={<RandomBeer />} />
          <Route path="/beer/:id" element={<SingleBeer />} /> 
+
+
+         <Route path="/error" element={<Error />} /> 
+         <Route path="*" element={<NotFound />} /> 
       </Routes>
     </div>
   );

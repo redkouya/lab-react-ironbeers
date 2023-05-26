@@ -28,7 +28,7 @@ function Navbar() {
       <Link to="/random-beer">
         <div>
           <img src={randomBeerImg} alt="random-beer" />
-          <h3>New Beer</h3>
+          <h3>Random Beer</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}

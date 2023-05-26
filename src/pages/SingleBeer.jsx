@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BounceLoader } from "react-spinners";
+import BeerDetails from "../components/BeerDetails";
 
 function SingleBeer() {
   const params = useParams();
@@ -38,13 +39,7 @@ function SingleBeer() {
 
   return (
     <div className="container-center">
-      <div className="single-card">
-        <img src={beerDetails.image_url} alt={beerDetails.name} />
-        <h2>{beerDetails.name}</h2>
-        <h3 className="tagline">{beerDetails.tagline}</h3>
-        <h5>Brewer Tips</h5>
-        <p>{beerDetails.description}</p>
-      </div>
+      <BeerDetails beerDetails={beerDetails} />
     </div>
   );
 }
