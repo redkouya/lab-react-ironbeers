@@ -8,7 +8,7 @@ a {
   margin-top: 20px;
 }
 header {
-  background-color: aqua;
+  background-color: #3dc4fc;
 }
 header a {
   display: flex;
@@ -78,4 +78,51 @@ p {
 .single-card .tagline,
 .beer-card .tagline {
   color: gray;
+}
+
+.search-bar-container input {
+  border-radius: 15px;
+  border: 2px solid lightgray;
+  width: 350px;
+}
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+.form-new-beer {
+  margin: auto;
+  font-weight: bold;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+.form-new-beer label{
+  margin-left: 10px;
+}
+.form-new-beer input,textarea{
+  border-radius: 5px;
+  margin:10px;
+  width: 100%;
+}
+.form-new-beer button{
+  width: 100%;
+  background-color: #3dc4fc;
+  color:white;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  cursor: pointer;
+}
+.form-new-beer button:hover{
+  background-color: #2aa4d8;
+
 }
